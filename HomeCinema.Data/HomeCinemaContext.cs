@@ -34,15 +34,15 @@ namespace HomeCinema.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            //modelBuilder.Configurations.Add(new UserConfiguration());
-            //modelBuilder.Configurations.Add(new UserRoleConfiguration());
-            //modelBuilder.Configurations.Add(new RoleConfiguration());
-            //modelBuilder.Configurations.Add(new CustomerConfiguration());
-            //modelBuilder.Configurations.Add(new MovieConfiguration());
-            //modelBuilder.Configurations.Add(new GenreConfiguration());
-            //modelBuilder.Configurations.Add(new StockConfiguration());
-            //modelBuilder.Configurations.Add(new RentalConfiguration());
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Configurations.Add(new UserConfiguration());
+            modelBuilder.Configurations.Add(new UserRoleConfiguration());
+            modelBuilder.Configurations.Add(new RoleConfiguration());
+            modelBuilder.Configurations.Add(new CustomerConfiguration());
+            modelBuilder.Configurations.Add(new MovieConfiguration());
+            modelBuilder.Configurations.Add(new GenreConfiguration());
+            modelBuilder.Configurations.Add(new StockConfiguration());
+            modelBuilder.Configurations.Add(new RentalConfiguration());
         }
     }
 }
